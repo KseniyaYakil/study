@@ -1,0 +1,9 @@
+<title>Authorisation</title>
+{% if auth_addr %}
+	<p>You are not authorised in Linkedin</p>
+	<p>Please,proceed to LinkedIn authorisation page:</p>
+	<a href=\"{{auth_addr}}\"></a>		
+{% else %}
+	<p>Sorry, internal errors occured</p>
+{% endif %}
+	
